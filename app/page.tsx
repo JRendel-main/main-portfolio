@@ -27,6 +27,7 @@ import { ColorPaletteShowcase } from "@/components/color-palette-showcase"
 import { ExperienceTimeline } from "@/components/experience-timeline"
 import { ThemePreview } from "@/components/theme-preview"
 import { ThemeToggleButton } from "@/components/theme-toggle-button"
+import projects from "@/components/projects"
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -396,12 +397,9 @@ export default function Portfolio() {
                     transition={{ duration: 0.5, delay: 0.7 }}
                   >
                     A passionate{" "}
-                    <span className="font-semibold text-foreground">PHP</span>{" "}
-                    and{" "}
-                    <span className="font-semibold text-foreground">
-                      JavaScript
-                    </span>{" "}
-                    developer crafting exceptional digital experiences.
+                    <span className="font-semibold text-primary">Full-stack</span>{" "}
+                    developer crafting exceptional digital experiences. 
+                    I am a full-stack developer with a strong passion for creating innovative and user-friendly web applications. 
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -454,17 +452,17 @@ export default function Portfolio() {
                   {[
                     {
                       icon: <Github className="h-5 w-5" />,
-                      href: "https://github.com",
+                      href: "https://github.com/JRendel-main",
                       label: "GitHub",
                     },
                     {
                       icon: <Linkedin className="h-5 w-5" />,
-                      href: "https://linkedin.com",
+                      href: "https://linkedin.com/in/jrendel-main",
                       label: "LinkedIn",
                     },
                     {
                       icon: <Mail className="h-5 w-5" />,
-                      href: "mailto:contact@example.com",
+                      href: "mailto:sanluisjohnrendel@gmail.com",
                       label: "Email",
                     },
                   ].map((item, index) => (
@@ -542,7 +540,7 @@ export default function Portfolio() {
                   />
                   <div className="relative h-full w-full overflow-hidden rounded-2xl border border-border/50 bg-muted/30">
                     <Image
-                      src="/placeholder.svg?height=600&width=600"
+                      src="/profile.jpg?height=600&width=600"
                       width={600}
                       height={600}
                       alt="Developer portrait"
@@ -622,7 +620,7 @@ export default function Portfolio() {
                 />
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-border/50 bg-muted/30">
                   <Image
-                    src="/placeholder.svg?height=600&width=450"
+                    src="/profile.jpg?height=600&width=450"
                     width={450}
                     height={600}
                     alt="Developer working"
@@ -1066,58 +1064,7 @@ export default function Portfolio() {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ delayChildren: 0.1, staggerChildren: 0.1 }}
             >
-              {[
-                {
-                  title: "NEUST Peer Tutor Hub (Thesis)",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "jQuery", "Bootstrap", "PHPMailer", "MySQL"],
-                  description:
-                    "This peer tutor hub is designed for the students of Nueva Ecija University of Science and Technology. It features a clean, intuitive interface built with JQuery, PHP, and Bootstrap. The system includes features like peer tutor registration, scheduling, and grading.",
-                },
-                {
-                  title: "Software Developer Portfolio",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["NextJS", "Javascript", "Tailwind", "ShadcnUI"],
-                  description: "Software Portfolio for visibility of Developer",
-                },
-                {
-                  title: "Job Application Management System",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "JQuery", "Bootstrap", "MySQL"],
-                  description:
-                    "A simple job tracking application for applicants to manage and track the status of their applications",
-                },
-                {
-                  title: "Bislig - Electronic Barangay Management System",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "CakePHP", "Tailwind", "AngularJS", "MySQL"],
-                  description:
-                    "Bislig's Electronic Barangay Management System digitizes local government operations, streamlining resident services, document processing, and community program management in a single unified platform. This system empowers barangay officials with real-time data access and reporting tools while providing residents with more efficient service delivery and transparent governance.",
-                },
-                {
-                  title:
-                    "Pierce Mega Corp. - Electronic Logistics Management System",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "CakePHP", "Bootstrap", "AngularJS", "MySQL"],
-                  description:
-                    "Pierce Mega Corp.'s Electronic Logistics Management System automates and optimizes the entire supply chain process, from inventory tracking to shipment routing and delivery confirmation. This integrated platform provides real-time visibility across logistics operations, enabling faster decision-making and improved operational efficiency.",
-                },
-                {
-                  title:
-                    "Jelexei Bakeshop's Electronic Human Resource Information System.",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "CakePHP", "Bootstrap", "AngularJS", "MySQL"],
-                  description:
-                    "Jelexei Bakeshop's Electronic Human Resource Information System streamlines employee management, scheduling, and payroll processes in a single digital platform. This custom solution eliminates paperwork while providing bakery managers with the tools they need to efficiently track staff, manage production schedules, and make data-driven decisions.",
-                },
-                {
-                  title: "NEHS SHS | Student Information System",
-                  image: "/placeholder.svg?height=300&width=500",
-                  skills: ["PHP", "CakePHP", "Bootstrap", "AngularJS", "MySQL"],
-                  description:
-                    "Nueva Ecija High School's Student Information System centralizes student data management, academic tracking, and administrative processes for seamless educational operations. This comprehensive platform connects administrators, teachers, students, and parents through a unified digital environment that enhances communication and institutional efficiency.",
-                },
-              ].map((project, index) => (
+              {projects().map((project, index) => (
                 <motion.div
                   key={project.title}
                   variants={itemFade}

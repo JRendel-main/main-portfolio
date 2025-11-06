@@ -40,6 +40,26 @@ const experiences: TimelineItem[] = [
   },
   {
     id: 2,
+    role: "Junior System Analyst",
+    company: "Bounty Fresh Inc.",
+    location: "BGC, Taguig City",
+    period: "May 2025 - Present",
+    description: "Analyzing and developing system requirements for stakeholders",
+    achievements: [
+      "Developed dashboard for monitoring and managing system requirements",
+      "Maintained and Improved exsisting E-commerce platform (Bounty Fresh Market)",
+      "Developed over 3+ internal systems for company use, using no-code platform such AppSheet and Microsoft Power Apps",
+      "Developed over 2 internal systems for company use, using web development platform such Laravel and React",
+      "Implemented business solutions for client needs with 100% satisfaction rate",
+      "Prepared and Presented system requirements to stakeholders",
+      "Conducted system analysis and requirements gathering for new projects",
+    ],
+    technologies: ["Laravel", "React", "TypeScript", "Javascript", "AppSheet", "Shopify", "Wordpress", "Google Analytics", "Google Tag Manager", "Google Optimize"]
+  },
+
+  
+  {
+    id: 3,
     role: "Assistant Software & Web Developer",
     company: "My Creative Panda Inc.",
     location: "Tarlac City, Tarlac",
@@ -62,8 +82,8 @@ const experiences: TimelineItem[] = [
     ],
   },
   {
-    id: 3,
-    role: "Web Developer Intern",
+    id: 4,
+    role: "Junior Developer Intern",
     company: "Techstacks IT Web Development Services",
     location: "Cabanatuan City, Nueva Ecija",
     period: "Jan 2024 - May 2024",

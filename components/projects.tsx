@@ -3,9 +3,9 @@ import React from 'react'
 const projects = () => {
   return [
     {
-      title: "E-commerce Platform",
+      title: "Bounty Fresh Market",
       image: "/placeholder.svg?height=300&width=500",
-      skills: ["PHP", "Laravel", "Vue.js", "MySQL"],
+      skills: ["Shopify", "Google Analytics", "SEO", "Google Tag Manager", "Google Optimize"],
       description:
         "A full-featured e-commerce platform with product management, cart functionality, payment processing, and order tracking.",
     },
